@@ -9,7 +9,7 @@
 
     const split = url.split('#');
     const queryP = split[1];
-    const redirect = split[0].split('/?')[1];
+    const redirect = split[0].split('/?redirect=')[1];
 
     window.location = redirect + '?' + queryP;
   </script>
