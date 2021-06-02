@@ -5,13 +5,13 @@
   
   <body>
   <script>
-    const url = window.location;
+    const url = window.location.href;
 
     const split = url.split('#');
     const queryP = split[1];
     const redirect = split[0].split('/?redirect=')[1];
 
-    window.location = redirect + '?' + queryP;
+    window.location.href = redirect + '?' + queryP;
   </script>
   </body>
 </html>
